@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PixelMorph - Redefine Your Images
 
-## Getting Started
+PixelMorph is a simple yet powerful web-based image processing tool built with Next.js. This tool allows users to upload an image and apply various transformations including face detection, grayscale conversion, image resizing, pencil sketch effects, cartoon filters, sepia filters, and noise reduction. It leverages an API backend to process the image and return the result.
 
-First, run the development server:
+# Features
+1. Grayscale Filter: Converts the uploaded image into black and white.
+2. Image Resizing: Allows users to resize their images by specifying width and height (in pixels).
+3. Pencil Sketch Filter: Converts the image into a pencil sketch effect.
+4. Cartoon Filter: Applies a cartoon-like effect to the image.
+5. Sepia Filter: Applies a sepia tone to give images a vintage look.
+6. Noise Reduction: Reduces noise in the uploaded image for better clarity.
+7. Face Detection: Detects human faces in the image and highlights them.
+
+# Local Deployment
+1. Clone the repository to your local machine:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/cpt1909/PixelMorph_frontend.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project folder:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+cd PixelMorph_frontend
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Build the app and start the server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+5. Open the app in your browser by going to
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Usage
+1. Upload an image by selecting the "Upload" button.
+2. Choose an image processing option from the dropdown.
+3. If you select the "Resize Image" option, input the desired width and height.
+4. The processed image will appear below the upload section.
+5. Download the processed image by clicking the "Download Output" button.
+
+# Tech Stack
+1. Frontend: React.js (Next.js)
+2. Backend API: Custom [Image Processing Server](https://github.com/cpt1909/PixelMorph_backend) built on Python Flask
+4. Deployment: Render (backend), Vercel (frontend)
+3. Styling: Good old CSS
+
+# License
+This project is open source and available under the MIT License.
+<!--
+# Contributing
+Feel free to fork this repository, submit issues, and create pull requests. Contributions are welcome!
+-->
